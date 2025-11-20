@@ -3,7 +3,10 @@ document.addEventListener("DOMContentLoaded", () => {
     let resultado = document.querySelector(".tela"); //seleciona o documento tela
 
     function bloquearTecladoMobile() { //função para não ativar o teclado quando for mobile ou tablet
-        if (window.innerWidth <= 1024) {  //se a largura do navegador for menor que 1025px
+
+        const isTouch = window.matchMedia("(pointer: coarse)").matches; //verifica uma condição que está no CSS, no JS. no caso, se é touch
+
+        if ( isTouch ) {  //se a largura do navegador for menor que 1025px
             //mobile e tablet
             resultado.setAttribute("readonly", true); //ativa o readonly 
         } else {
