@@ -5,18 +5,19 @@ body {
         justify-content: center;
         align-items: center;
         font-family: Arial;
+        overflow: hidden;
     }
 
     .bg-video {
-     position: fixed;
-     top: 0;
-     left: 0;
-     width: 100vw;
-     height: 100vh;
-     object-fit: cover; 
-     z-index: -1;
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100vw;
+         height: 100vh;
+         object-fit: cover; 
+         z-index: -1;
    }
-
+ /*a calculadora explodiu QUE K K K K K K K K K K K K K K K K K*/
     .calc {
         width: 350px;
         height: 550px;
@@ -32,14 +33,17 @@ body {
 
     .tela {
         width: 100%;
+        box-sizing: border-box;
         padding: 20px;
-        margin-top: 40px;
         font-size: 32px;
         height: 60px;
         color: white;
         background: transparent;
         border: none;
         outline: none;
+        overflow-x: auto;
+        white-space: nowrap;
+        display: block;
     }
 
     .botoes {
@@ -74,9 +78,13 @@ body {
         color: hwb(271 18% 35%);
     }
 
-    @media (max-width: 769px) {
-        .tela {
-            caret-color: transparent;
-            user-select: none;
-        }
+    .contaAnterior {
+        width: 100%;
+        padding-left: 22px;
+        font-size: 18px;
+        color: #ffffffaa;
+        height: 25px;
+        overflow: hidden;
+        text-align: left;
+        margin-top: 65px;
     }
