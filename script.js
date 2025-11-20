@@ -1,6 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
-
-    let resultado = document.querySelector(".tela"); //seleciona o documento tela
+let resultado = document.querySelector(".tela"); //seleciona o documento tela
 
     function bloquearTecladoMobile() { //função para não ativar o teclado quando for mobile ou tablet
 
@@ -100,4 +98,3 @@ document.addEventListener("DOMContentLoaded", () => {
     
     });
 
-});
