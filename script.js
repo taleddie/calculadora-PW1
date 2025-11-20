@@ -4,12 +4,12 @@ let resultado = document.querySelector(".tela"); //seleciona o documento tela
 
         const isTouch = window.matchMedia("(pointer: coarse)").matches; //verifica uma condição que está no CSS, no JS. no caso, se é touch
 
-        if ( isTouch ) {  //se a largura do navegador for menor que 1025px
+        if ( isTouch ) {  //se for touch
             //mobile e tablet
-            resultado.setAttribute("inputmode", "none"); //ativa o readonly 
+            resultado.setAttribute("inputmode", "none"); //atribui ao input o modo none, que bloqueia o teclado
         } else {
             // desktop
-            resultado.removeAttribute("inputmode"); //se nao, ele remove o readonly
+            resultado.removeAttribute("inputmode"); //se nao, ele remove a atribuiçao
         }
     }
 
@@ -97,5 +97,4 @@ let resultado = document.querySelector(".tela"); //seleciona o documento tela
     //to usando o googlis p pesquisar, gpt so p tirar duvida :((( deixa essa parte como comentario final do codigo K K K K 
     
     });
-
 
