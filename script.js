@@ -10,6 +10,7 @@ function bloquearTecladoMobile() { //função para não ativar o teclado quando 
     }
 }
 
+bloquearTecladoMobile(); //chama a função quando a página carrega
 
 function add(num) { //funcao de adicionar numeros e operadores
     if (resultado.value === "Erro" || resultado.value === "0") {
