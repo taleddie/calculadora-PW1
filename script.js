@@ -41,7 +41,7 @@ function add (n) {
 
 const desktop = window.matchMedia("(min-width: 768px)").matches;
 
-if (desktop) {
+if (window.matchMedia("(pointer: fine)").matches) {
 
     document.addEventListener("keydown", function(event) { //funcao para habilitar o teclado
     const tecla = event.key; //pega a tecla pressionada
