@@ -6,10 +6,10 @@ let resultado = document.querySelector(".tela"); //seleciona o documento tela
 
         if ( isTouch ) {  //se a largura do navegador for menor que 1025px
             //mobile e tablet
-            resultado.setAttribute("readonly", true); //ativa o readonly 
+            resultado.setAttribute("inputmode", "none"); //ativa o readonly 
         } else {
             // desktop
-            resultado.removeAttribute("readonly"); //se nao, ele remove o readonly
+            resultado.removeAttribute("inputmode"); //se nao, ele remove o readonly
         }
     }
 
@@ -97,4 +97,5 @@ let resultado = document.querySelector(".tela"); //seleciona o documento tela
     //to usando o googlis p pesquisar, gpt so p tirar duvida :((( deixa essa parte como comentario final do codigo K K K K 
     
     });
+
 
