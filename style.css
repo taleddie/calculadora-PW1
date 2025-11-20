@@ -74,7 +74,7 @@ body {
         opacity: 0.7;
     }
 
-    #ac {
+    .ac {
         color: hwb(271 18% 35%);
     }
 
@@ -88,3 +88,64 @@ body {
         text-align: left;
         margin-top: 65px;
     }
+
+    .btn-0 { grid-column: 2; }
+
+/* MODO DEITADO (HORIZONTAL / LANDSCAPE) */
+@media (max-width: 767px) and (orientation: landscape) {
+    .calc { height: 80vh;}
+
+    .botoes {
+        grid-template-columns: repeat(6, 1fr);
+        bottom: 5px;
+    }
+
+    @media (orientation: landscape) {
+
+        .calc {
+            width: 400px; 
+            height: 325px;
+        }
+
+    .botoes {
+           display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            bottom: 5px;
+        }
+
+    button {
+            width: 45px;
+            padding: 10px;
+            font-size: 20px;
+        }
+
+    /* 1ª linha */
+    .btn-ac { grid-column: 1; grid-row: 1; }
+    .btn-c { grid-column: 2; grid-row: 1; }
+    .btn-paren { grid-column: 3; grid-row: 1; }
+    .btn-mu{ grid-column: 4; grid-row: 1; } 
+    .btn-di{ grid-column: 5; grid-row: 1; }
+
+    /* 2ª linha*/
+    .btn-6 { grid-column: 1; grid-row: 2; }
+    .btn-7 { grid-column: 2; grid-row: 2; }
+    .btn-8 { grid-column: 3; grid-row: 2; }
+    .btn-9 { grid-column: 4; grid-row: 2; }
+    .btn-soma { grid-column: 5; grid-row: 2; }
+
+    /* 3ª linha*/
+    .btn-2 { grid-column: 1; grid-row: 3; }
+    .btn-3 { grid-column: 2; grid-row: 3; }
+    .btn-4 { grid-column: 3; grid-row: 3; }
+    .btn-5 { grid-column: 4; grid-row: 3; }
+    .btn-sub { grid-column: 5; grid-row: 3; }
+
+    /* 4ª linha*/
+    .btn-0 { grid-column: 2; grid-row: 4; }
+    .btn-1 { grid-column: 3; grid-row: 4; }
+    .btn-ponto { grid-column: 4; grid-row: 4; }
+    .btn-resul { grid-column: 5; grid-row: 4; }
+}
+
+}
