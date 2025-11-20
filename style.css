@@ -1,4 +1,4 @@
-body {
+    body {
         background: #4b2e83;
         height: 100vh;
         display: flex;
@@ -91,34 +91,42 @@ body {
 
     .btn-0 { grid-column: 2; }
 
-/* MODO DEITADO (HORIZONTAL / LANDSCAPE) */
-@media (max-width: 767px) and (orientation: landscape) {
-    .calc { height: 80vh;}
+/* responsividade para mobile na horizontal */
+@media (max-width: 1023px) and (orientation: landscape) and (pointer: coarse), (max-height: 400px){
+
+    .calc {
+        width: 500px;
+        height: 325px;
+    }
 
     .botoes {
         grid-template-columns: repeat(6, 1fr);
         bottom: 5px;
     }
 
-    @media (orientation: landscape) {
-
-        .calc {
-            width: 400px; 
-            height: 325px;
-        }
 
     .botoes {
-           display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 10px;
-            bottom: 5px;
-        }
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+        bottom: 5px;
+    }
 
     button {
-            width: 45px;
-            padding: 10px;
-            font-size: 20px;
-        }
+        width: 45px;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .tela {
+        font-size: 24px;
+        height: 0px;
+    }
+
+    .contaAnterior {
+        margin-top: 25px;
+    }
+
 
     /* 1ª linha */
     .btn-ac { grid-column: 1; grid-row: 1; }
@@ -148,4 +156,3 @@ body {
     .btn-resul { grid-column: 5; grid-row: 4; }
 }
 
-}
