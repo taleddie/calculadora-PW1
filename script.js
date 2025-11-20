@@ -1,4 +1,4 @@
-let resultado = document.querySelector(".tela"); //seleciona o documento tela
+let resultado = document.querySelector(".telaDesktop", ".telaMobile")); //seleciona o documento tela
 
 function add(num) { //funcao de adicionar numeros e operadores
     if (resultado.value === "0"){ resultado.value = "";} //se o resultado for 0, limpa a tela
@@ -76,4 +76,5 @@ if (window.matchMedia("(pointer: fine)").matches) {
 })
 
 }
+
 
