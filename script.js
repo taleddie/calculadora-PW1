@@ -1,16 +1,15 @@
 let resultado = document.querySelector(".tela"); //seleciona o documento tela
 
-function bloquearTecladoMobile() {
-    if (window.innerWidth <= 1024) { 
-        // mobile e tablet
-        resultado.setAttribute("readonly", true);
+function bloquearTecladoMobile() { //função para não ativar o teclado quando for mobile ou tablet
+    if (window.innerWidth <= 1024) {  //se a largura do navegador for menor que 1025px
+        //mobile e tablet
+        resultado.setAttribute("readonly", true); //ativa o readonly 
     } else {
         // desktop
-        resultado.removeAttribute("readonly");
+        resultado.removeAttribute("readonly"); //se nao, ele remove o readonly
     }
 }
 
-bloquearTecladoMobile();
 
 function add(num) { //funcao de adicionar numeros e operadores
     if (resultado.value === "Erro" || resultado.value === "0") {
