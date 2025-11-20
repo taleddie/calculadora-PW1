@@ -39,7 +39,11 @@ function add (n) {
     
 }
 
-document.addEventListener("keydown", function(event) { //funcao para habilitar o teclado
+const desktop = window.matchMedia("(min-width: 768px)").matches;
+
+if (desktop) {
+
+    document.addEventListener("keydown", function(event) { //funcao para habilitar o teclado
     const tecla = event.key; //pega a tecla pressionada
 
     //se for enter, calcula
@@ -70,3 +74,6 @@ document.addEventListener("keydown", function(event) { //funcao para habilitar o
 //to usando o googlis googlis p pesquisar, gpt so p tirar duvida :((( deixa essa parte como comentario final do codigo K K K K 
    
 })
+
+}
+
