@@ -18,8 +18,8 @@ body {
    }
 
     .calc {
-        width: 310px;
-        height: 510px;
+        width: 350px;
+        height: 550px;
         background: #ffffff4d;
         border-radius: 20px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -48,7 +48,7 @@ body {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        margin: 4px;
+        padding: 10px;
         gap: 10px;
         z-index: 10;
         color: white;
