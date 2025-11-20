@@ -30,7 +30,7 @@ body {
         position: relative;
     }
 
-    .tela {
+    .telaDesktop, .telaMobile {
         width: 100%;
         padding: 20px;
         margin-top: 40px;
@@ -72,4 +72,10 @@ body {
 
     #ac {
         color: hwb(271 18% 35%);
+    }
+
+    @media (max-width: 768px) {
+        .telaDesktop {
+            display: none;
+        }
     }
