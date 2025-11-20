@@ -1,5 +1,17 @@
 let resultado = document.querySelector(".tela"); //seleciona o documento tela
 
+function bloquearTecladoMobile() {
+    if (window.innerWidth <= 1024) { 
+        // mobile e tablet
+        resultado.setAttribute("readonly", true);
+    } else {
+        // desktop
+        resultado.removeAttribute("readonly");
+    }
+}
+
+bloquearTecladoMobile();
+
 function add(num) { //funcao de adicionar numeros e operadores
     if (resultado.value === "Erro" || resultado.value === "0") {
         resultado.value = ""
