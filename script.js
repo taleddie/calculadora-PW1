@@ -2,13 +2,14 @@ let resultado = document.querySelector(".tela"); //seleciona o documento tela
 
 function add(num) { //funcao de adicionar numeros e operadores
     if (resultado.value === "Erro" || resultado.value === "0") {
-        resultado.value = ""}
-
-    let input = document.querySelector(".tela");
-    let Posicao = input.selectionStart;
-
+        resultado.value = ""
+    }
+ 
+    let input = document.querySelector(".tela"); // ai n sei fazer porcentagem aq nau, vo arrancar essebotao fora KKKKKKKKKKKKKKKKKKK
+    let Posicao = input.selectionStart;                // o q c quer fazer? fazer o botao funcionar direito, a porcentagem certinha:( to vendo aqui parece muitp dificil fazer esse ngc de porcetagem entao
     let nAnterior = input.value[Posicao - 1];
-// agr que os parenteses tão multiplicando n ta ficando com, o cursor no meio vo me matar eu vi q odio mas deve ser dboa pra arrumar vo mija fiz ai uhuu durda escuta o rap do gta v do player tauz k k k k k k kthe zuera never ends
+    
+
     if (num === "()" && nAnterior && (/[0-9]/.test(nAnterior) || nAnterior === ")")) {
         num = "*" + num;
     } 
@@ -25,6 +26,7 @@ function add(num) { //funcao de adicionar numeros e operadores
 function calcular() { //funcao do botao =
     try {
         let conta = resultado.value; //pega o que ta na tela
+
         let resultadoFinal = eval(conta); //calcula
  
         resultadoFinal = parseFloat(resultadoFinal.toFixed(6)); //arredonda casas decimais
@@ -34,7 +36,7 @@ function calcular() { //funcao do botao =
         resultado.value = resultadoFinal; //joga na tela
     } catch {
         resultado.value = "Erro"; //se der erro
-    } //durda digita uma barra reta pfvr ,meu teclado n temkk, nao curt sua zoaçãokk / \ ata era essa nao li a parte do reta toma todas raleu viu 🙏
+    } 
 }
 
 function limpar() { //funcao do botao AC
@@ -48,7 +50,6 @@ function apagar() { //funcao do botao C
     resultado.value = texto.slice(0, -1); //apaga o ultimo caractere
 }
 
-//nao   oq?pode ter dois add no codigo, vou juntar e ver se da mmerda podecrekkkk 
 
 document.addEventListener("keydown", function(event) { //funcao para habilitar o teclado
     const tecla = event.key; //pega a tecla pressionada
