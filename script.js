@@ -11,6 +11,7 @@ function bloquearTecladoMobile() { //função para não ativar o teclado quando 
 }
 
 bloquearTecladoMobile(); //chama a função quando a página carrega
+window.addEventListener("resize", bloquearTecladoMobile); 
 
 function add(num) { //funcao de adicionar numeros e operadores
     if (resultado.value === "Erro" || resultado.value === "0") {
@@ -94,3 +95,4 @@ document.addEventListener("keydown", function(event) { //funcao para habilitar o
 //to usando o googlis p pesquisar, gpt so p tirar duvida :((( deixa essa parte como comentario final do codigo K K K K 
    
 })
+
