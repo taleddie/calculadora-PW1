@@ -77,7 +77,7 @@ let resultado = document.querySelector(".tela"); //seleciona o documento tela
 
         //se for backspace, apaga
         if (tecla === "Backspace") {
-            apagar();  //praq o shift? pra poder usar os operadores fora do teclado numerico
+            apagar(); 
         }
 
         //libera setas e shift 
