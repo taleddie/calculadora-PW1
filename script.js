@@ -41,7 +41,6 @@ let resultado = document.querySelector(".tela"); //seleciona o documento tela
     function calcular() { //funcao do botao =
         try {
             let conta = resultado.value; //pega o que ta na tela
-
             let resultadoFinal = eval(conta); //calcula
     
             resultadoFinal = parseFloat(resultadoFinal.toFixed(6)); //arredonda casas decimais
@@ -77,7 +76,7 @@ let resultado = document.querySelector(".tela"); //seleciona o documento tela
 
         //se for backspace, apaga
         if (tecla === "Backspace") {
-            apagar(); 
+            apagar();
         }
 
         //libera setas e shift 
