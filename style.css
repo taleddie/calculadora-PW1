@@ -9,13 +9,13 @@
     }
 
     .bg-video {
-         position: fixed;
-         top: 0;
-         left: 0;
-         width: 100vw;
-         height: 100vh;
-         object-fit: cover; 
-         z-index: -1;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover; 
+        z-index: -1;
    }
  
     .calc {
@@ -23,12 +23,10 @@
         height: 550px;
         background: #ffffff4d;
         border-radius: 20px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(15px);
         border: #ffffff63 1px solid;
         overflow: hidden;
         box-shadow: 0 0px 30px rgba(0, 0, 0, 0.5);
-        position: relative;
     }
 
     .tela {
@@ -74,8 +72,9 @@
         opacity: 0.7;
     }
 
-    .ac {
-        color: hwb(271 18% 35%);
+    .btn-ac, .btn-resul {
+        color: hwb(281 20% 65%);
+        border: hwb(281 20% 65%) 1px solid;
     }
 
     .contaAnterior {
