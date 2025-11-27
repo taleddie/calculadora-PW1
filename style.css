@@ -122,9 +122,7 @@
         height: 0px;
     }
 
-    .contaAnterior {
-        margin-top: 25px;
-    }
+    .contaAnterior { margin-top: 25px; }
 
 
     /* 1ª linha */
@@ -154,4 +152,5 @@
     .btn-ponto { grid-column: 4; grid-row: 4; }
     .btn-resul { grid-column: 5; grid-row: 4; }
 }
+
 
