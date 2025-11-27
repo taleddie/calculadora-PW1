@@ -22,7 +22,7 @@ let resultado = document.querySelector(".tela"); //seleciona o documento tela
         }
     
         let input = document.querySelector(".tela"); // ai n sei fazer porcentagem aq nau, vo arrancar essebotao fora KKKKKKKKKKKKKKKKKKK
-        let Posicao = input.selectionStart;                // o q c quer fazer? fazer o botao funcionar direito, a porcentagem certinha:( to vendo aqui parece muitp dificil fazer esse ngc de porcetagem entao
+        let Posicao = input.selectionStart;
         let nAnterior = input.value[Posicao - 1];
         
 
